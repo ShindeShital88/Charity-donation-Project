@@ -1,0 +1,8 @@
+.table{
+margin-top:150px;
+}
+.deletbtn{
+    border-radius: 10px;
+    background: rgb(45,250,2);
+    background: linear-gradient(180deg, rgba(45,250,2,1) 0%, rgba(237,250,237,1) 10%, rgba(11,250,6,1) 100%);
+}

@@ -1,0 +1,37 @@
+.main-foot{
+    height: 300px;
+    width: 100vw;
+    background: rgb(250,168,2);
+background: linear-gradient(90deg, rgba(250,168,2,1) 0%, rgba(126,250,6,1) 100%);
+margin-top: 40px;
+}
+.logo-foot{
+    height: 350px;
+    width:350px;
+    border-radius:90px;
+    margin-top:-60px;
+    margin-left: 90px;
+}
+.footerr{
+    display: flex;
+}
+.aboutus{
+    margin-top:40px;
+    margin-left:90px;
+    font-size: x-large;
+    font-weight: 600;
+    /* font-family:Arial, Helvetica, sans-serif; */
+    color:white;
+    font: bold;
+}
+.list{
+    text-decoration: none;
+    color: white;
+    margin-left: 50px;
+    font-size:20px;
+}
+.insta{
+    height: 40px;
+    width: 40px;
+    margin:5px;
+}

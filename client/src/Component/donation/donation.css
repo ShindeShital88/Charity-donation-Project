@@ -1,0 +1,80 @@
+.child{
+
+    margin-top: 100px;
+  text-align: center;
+    
+}
+.main-div{
+    height:600px;
+    width: 900px;
+    /* border: 1px solid; */
+    box-shadow: 1px 1px 10px 1px rgb(184, 182, 182);
+    margin-left: 140px;
+    margin-top: 30px;
+    padding-top: 30px;
+    background: rgb(45,250,2);
+background: linear-gradient(180deg, rgba(45,250,2,1) 0%, rgba(237,250,237,1) 10%, rgba(11,250,6,1) 100%);
+
+
+}
+.from{
+    text-align: left;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+.value{
+    height: 40px;
+    width: 250px;
+    /* margin-left: 20px; */
+    /* margin: 10px; */
+    /* margin-left: 30px;    */
+}
+
+.buton{
+height: 45px;
+width: 150px;
+position: relative;
+margin-left:170px;
+/* top: -50px; */
+border-radius: 10px;
+background: rgb(45,250,2);
+background: linear-gradient(180deg, rgba(45,250,2,1) 0%, rgba(237,250,237,1) 10%, rgba(11,250,6,1) 100%);
+
+/* color: white; */
+}
+.effect{
+  margin-left: 60px;
+  height:40px;
+}
+.span{
+    text-align: left;  
+
+}
+.span1{
+    margin-left: 40px;
+    text-align: center;
+}
+.main-input1{
+    margin-left: 50px;
+    height: 40px;
+    width: 250px;
+}
+  .main-input{
+    margin:20px;
+    height: 40px;
+    width: 250px;
+  }
+  .main-input2{
+    height: 40px;
+    width: 250px;
+    margin-left: 40px;
+
+  }
+  .main-input4{
+    height: 40px;
+    width: 250px;
+    margin-left:90px;
+
+  }
+  
+  

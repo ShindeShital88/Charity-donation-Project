@@ -1,0 +1,99 @@
+.data1 {
+    text-align: center;
+    margin-top: 30px;
+
+}
+
+.data {
+    text-align: center;
+    font-size: 20px;
+}
+
+.display {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.clg {
+    height: 210px;
+}
+
+.card {
+    text-align: center;
+}
+
+.img-card {
+    margin-top: 40px;
+    box-shadow: 1px 1px 10px 1px rgb(194, 192, 192);
+    transition: 2s;
+}
+
+.img-card:hover {
+    transform: scale(0.9);
+}
+
+
+
+.on {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.plat {
+    margin-top: 30px;
+    /* border: 1px solid  ; */
+    box-shadow: 1px 1px 10px 1px rgb(168, 166, 166);
+    height: 110px;
+    width: 900px;
+    margin-left: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+    background: rgb(250,168,2);
+background: linear-gradient(90deg, rgba(250,168,2,1) 0%, rgba(126,250,6,1) 100%);
+}
+
+.lov {
+    text-align: center;
+    margin-top:70px;
+}
+
+.div-div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.img-img {
+    height: 300px;
+    width: 300px;
+    margin-left: 70px;
+    margin-top: -80px;
+}
+
+.benefit {
+    margin-top: 20px;
+}
+
+.main-class {
+    margin-left: 450px;
+    margin-top: 80px;
+}
+
+.support {
+    margin-top: 30px;
+}
+
+.main-eate {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.eate {
+    height: 300px;
+    width: 350px;
+}
+
+.employe {
+    margin-top: 50px;
+}
