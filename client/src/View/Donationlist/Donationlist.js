@@ -14,14 +14,13 @@ export default function DonateList() {
         setFrom(no.data.data)
     }
 
-    const deleteAPI = async(Data)=>{
+    const deleteAPI = async (From) => {
         const id = From._id;
-        const deleteuserdata = await axios.delete(`http://localhost:7000/donates/${id}`)
-        alert(deleteuserdata.data.msg)
-        variable();
+        const deletedata = await axios.delete(`http://localhost:7000/donates/${id}`)
+        alert("Donation delete sucessfully");
+        variable(deletedata.data.msg);
+        console.log("deletedata.data.msg");
     }
-
-
     useEffect(
         () => {
             variable();

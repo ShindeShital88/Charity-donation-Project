@@ -11,9 +11,14 @@
 
 .display {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
-
+@media screen and (max-width:300) {
+.display{
+    flex-wrap: wrap;
+}    
+}
 .clg {
     height: 210px;
 }
@@ -47,10 +52,16 @@
     width: 900px;
     margin-left: 150px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     padding-top: 10px;
     background: rgb(250,168,2);
 background: linear-gradient(90deg, rgba(250,168,2,1) 0%, rgba(126,250,6,1) 100%);
+}
+@media screen and (max-width:300px){
+    .plat{
+        flex-wrap: wrap;
+    }
 }
 
 .lov {

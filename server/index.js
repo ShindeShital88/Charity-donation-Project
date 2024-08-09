@@ -4,6 +4,7 @@ import cors from 'cors';
 import Charity from './Models/signup.js';
 import From from './Models/donation.js';
 import Card from './Models/card.js';
+import Feedback from './Models/feedback.js';
 
 
 const donation = express();
@@ -143,14 +144,47 @@ donation.post('/Card',async(req,res)=>{
         })
     }
 })
-
-
-donation.delete('/from/:_id', async(req, res)=>{
+donation.delete('/donates/:_id', async(req, res)=>{
     const {_id} =req.params;
-    const dele= await From.deleteOne({_id:_id})
+    const dele= await Note.deleteOne({_id:_id})
     res.json({
 
         data:dele,
         msg:"id is deleted"
     })
  })
+
+
+
+
+ donation.post('/feedback', async(req, res)=>{
+    try{
+        const{ name, email, rating, comments, date}=req.body
+        const feed = Feedback.create({
+            "name":name,
+             "email":email,
+             "rating":rating,
+             "comments":comments,
+             "date":date
+        })
+        res.json({
+            success:true,
+            data:feed,
+            msg:"display the feedback."
+        })
+    }
+    catch(error){
+    res.json({
+        success:false,
+        msg:error.message
+    })
+}
+ })
+
+
+ donation.get('/feedbacks', async (req, res) => {
+    const feedall = await From.find();
+    res.json({
+        data:feedall
+    })
+})

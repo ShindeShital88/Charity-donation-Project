@@ -62,7 +62,7 @@ export default function Home() {
 
 
     
-      <div>
+      <div className='flex'>
         <h3 className='on'>India’s most trusted online
           donation platform</h3>
       </div>
