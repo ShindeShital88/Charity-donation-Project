@@ -14,11 +14,13 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+
 @media screen and (max-width:300) {
-.display{
-    flex-wrap: wrap;
-}    
+    .display {
+        flex-wrap: wrap;
+    }
 }
+
 .clg {
     height: 210px;
 }
@@ -48,61 +50,90 @@
     margin-top: 30px;
     /* border: 1px solid  ; */
     box-shadow: 1px 1px 10px 1px rgb(168, 166, 166);
-    height: 110px;
-    width: 900px;
-    margin-left: 150px;
+    min-height: 110px;
+    width: 60vw;
+    margin: auto;
+margin-bottom: 40px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding-top: 10px;
-    background: rgb(250,168,2);
-background: linear-gradient(90deg, rgba(250,168,2,1) 0%, rgba(126,250,6,1) 100%);
+    background: rgb(250, 168, 2);
+    background: linear-gradient(90deg, rgba(250, 168, 2, 1) 0%, rgba(126, 250, 6, 1) 100%);
 }
-@media screen and (max-width:300px){
-    .plat{
+
+@media screen and (max-width:300px) {
+    .plat {
         flex-wrap: wrap;
     }
 }
 
-.lov {
+.card-card{
     text-align: center;
-    margin-top:70px;
+    margin-top: 70px;
 }
 
-.div-div {
+
+
+.support {
+    width: 100vw;
+}
+
+
+
+
+
+.card-card3 {
+    min-height: 60vh;
+    width: 100vw;
+    /* border: 3px solid red; */
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: center;
 }
-
+@media screen and(max-width:300) {
+    .card-card3{
+        flex-wrap: wrap;
+    }
+}
 .img-img {
     height: 300px;
-    width: 300px;
-    margin-left: 70px;
-    margin-top: -80px;
+    width: 25vw;
+    display: block;
+}
+.div-div {
+    /* border: 2px solid black; */
+    min-height: 40vh;
+    width: 60vw;
+    
 }
 
-.benefit {
-    margin-top: 20px;
-}
-
-.main-class {
-    margin-left: 450px;
-    margin-top: 80px;
+.div-h1 {
+    text-align: center;
 }
 
 .support {
-    margin-top: 30px;
+    /* margin-top: 30px; */
+    margin-bottom: 40px;
 }
 
 .main-eate {
-    margin-top: 50px;
+    /* margin-top: 50px; */
+    margin-bottom: 40px;
     display: flex;
     justify-content: space-evenly;
+    margin: auto;
 }
 
+@media screen and(max-width:300) {
+    .main-eate{
+        flex-wrap: wrap;
+    }
+}
 .eate {
-    height: 300px;
-    width: 350px;
+    height:20vw;
+    width:25vw;
 }
 
 .employe {

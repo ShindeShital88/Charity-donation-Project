@@ -14,7 +14,7 @@ export default function Sign() {
     const [LastName, setLastName] = useState('');
     const [Emailaddress, setEmailaddress] = useState('');
     const [Password, setPassword] = useState('');
-    const [who, setWho] = useState('');
+    const [role, setRole] = useState('');
 
 
     const SignupData = async () => {
@@ -25,7 +25,7 @@ export default function Sign() {
             LastName: LastName,
             Emailaddress: Emailaddress,
             Password: Password,
-            who: who
+            role: role
         })
         toast.success("Signup successfully")
 
@@ -63,7 +63,7 @@ export default function Sign() {
                     <input type='password' className='input-sign' placeholder='Enter the Password' onChange={(e) => { setPassword(e.target.value) }} /><br></br><br></br>
 
                     <select className='input-sign' onClick={(e) => {
-                        setWho(e.target.value)
+                        setRole(e.target.value)
                     }}>
                         <option>Signup as</option>
                         <option>Admin</option>

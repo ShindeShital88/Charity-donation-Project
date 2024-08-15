@@ -1,5 +1,5 @@
 .main-foot{
-    height: 300px;
+    min-height: 300px;
     width: 100vw;
     background: rgb(250,168,2);
 background: linear-gradient(90deg, rgba(250,168,2,1) 0%, rgba(126,250,6,1) 100%);

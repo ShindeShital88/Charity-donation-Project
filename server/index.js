@@ -26,14 +26,14 @@ mongodb();
 
 
 donation.post('/sign', (req, res) => {
-    const { FirstName, LastName, Emailaddress, Password, who } = req.body
+    const { FirstName, LastName, Emailaddress, Password, role } = req.body
     try {
         const alldata = Charity.create({
             "FirstName": FirstName,
             "LastName": LastName,
             "Emailaddress": Emailaddress,
             "Password": Password,
-            "who": who
+            "role": role
         })
         res.json({
             success: true,
@@ -55,6 +55,17 @@ donation.get('/signs', async (req, res) => {
         data: signdata
     })
 })
+
+donation.delete('/signs/:_id', async(req, res)=>{
+    const {_id} =req.params;
+    const deleteuser= await Charity.deleteOne({_id:_id})
+    res.json({
+
+        data:deleteuser,
+        msg:"id is deleted"
+    })
+ })
+
 
 
 donation.post('/login',(req, res)=>{
@@ -146,7 +157,7 @@ donation.post('/Card',async(req,res)=>{
 })
 donation.delete('/donates/:_id', async(req, res)=>{
     const {_id} =req.params;
-    const dele= await Note.deleteOne({_id:_id})
+    const dele= await From.deleteOne({_id:_id})
     res.json({
 
         data:dele,
@@ -182,9 +193,22 @@ donation.delete('/donates/:_id', async(req, res)=>{
  })
 
 
- donation.get('/feedbacks', async (req, res) => {
-    const feedall = await From.find();
+ donation.get('/feedbacks',async(req, res)=>{
+    const Allnotes = await Feedback.find();
     res.json({
-        data:feedall
+    data:Allnotes
     })
-})
+     
+ })
+
+
+
+ donation.delete('/feedbacks/:_id', async(req, res)=>{
+    const {_id} =req.params;
+    const dele= await Feedback.deleteOne({_id:_id})
+    res.json({
+
+        data:dele,
+        msg:"id is deleted"
+    })
+ })

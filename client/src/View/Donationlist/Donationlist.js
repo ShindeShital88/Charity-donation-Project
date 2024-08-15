@@ -3,8 +3,8 @@ import { useEffect, useState } from "react";
 import './Donationlist.css';
 import Navbar from '../../Component/Navbar/Navbar.js';
 import Footer from "../../Component/Footer/Footer.js";
-
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 export default function DonateList() {
     const [From, setFrom] = useState([])
 
@@ -17,7 +17,7 @@ export default function DonateList() {
     const deleteAPI = async (From) => {
         const id = From._id;
         const deletedata = await axios.delete(`http://localhost:7000/donates/${id}`)
-        alert("Donation delete sucessfully");
+    //  alert("Are you sure you want to delete your name from the donation list?");
         variable(deletedata.data.msg);
         console.log("deletedata.data.msg");
     }
@@ -28,12 +28,12 @@ export default function DonateList() {
 
     return (
         <>
- <Navbar />
+            <Navbar />
             <table border={1} className="table">
                 <thead>
                     <tr>
                         <th>FirstName</th>
-                        <th>LastName</th>   
+                        <th>LastName</th>
                         <th>PhoneNumber</th>
                         <th>Emailaddress</th>
                         <th>Address</th>
@@ -58,7 +58,7 @@ export default function DonateList() {
                                     <td>{Data.State}</td>
                                     <td>{Data.City}</td>
                                     <td>₹{Data.Amount}</td>
-                                    <td><button className='deletbtn' onClick={()=>{deleteAPI(Data)}}>Delete</button></td>
+                                    <td><button className='deletbtn' onClick={() => { deleteAPI(Data) }}>Delete</button></td>
                                 </tr>
                             </tbody>
                         </>
@@ -67,8 +67,9 @@ export default function DonateList() {
 
             </table>
 
-
+<ToastContainer/>
             <Footer />
+            
         </>
     )
 }

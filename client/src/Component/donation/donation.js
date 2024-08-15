@@ -84,7 +84,7 @@ export default function Donate() {
                    <span className='span'> PhoneNo : </span><input type='number' className='main-input' required onChange={(e) => {
                         console.log(e.target.value)
                         setPhoneNumber(e.target.value)
-                    }} placeholder='PhoneNo' />
+                    }} placeholder='PhoneNo' /> 
 
 {/* <br></br> */}
                  <span className='span1'> Email : </span> <input type='email' className='main-input1'  required onChange={(e) => {

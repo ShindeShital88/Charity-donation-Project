@@ -8,6 +8,9 @@ import Vision from './View/Mission/mission.js';
 import Login from './View/Login/Login.js';
 import DonateList from './View/Donationlist/Donationlist.js';
 import Sign from './View/Signup/Sign.js';
+import Feedback from './View/Feedback/Feedback.js';
+import { User } from './View/Admin/Userdata/Userdata.js';
+import {Feed }from './View/Admin/FeedbackAdmin/feedback.js';
 const routes =createBrowserRouter([
 
 
@@ -28,15 +31,25 @@ const routes =createBrowserRouter([
     element:<DonateList/>
 },
 {
+    path:'/Feedback',
+    element:<Feedback/>
+},
+{
     path:'/login',
     element:<Login/>
 },
 {
     path:'/sign',
     element:<Sign/>
+},
+{
+    path:'/User',
+    element:<User/>
+},
+{
+    path:'/Feed',
+    element:<Feed/>
 }
-
-
 
 
 

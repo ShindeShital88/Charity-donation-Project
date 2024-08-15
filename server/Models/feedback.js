@@ -12,19 +12,14 @@ const FeedbackSchema =new Schema(
             required: true,
          
           },
-          rating: {
-            type: Number,
-            required: true,
-            min: 1,
-            max: 5
-          },
+         
           comments: {
             type: String,
-            trim: true
+           
           },
           date: {
             type: Date,
-            default: Date.now
+            
           }
         });
     

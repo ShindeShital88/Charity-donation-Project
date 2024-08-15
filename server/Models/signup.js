@@ -18,7 +18,7 @@ const CharitySchema =new Schema(
         Password:{
             type : String
         },
-       who:{
+       role:{
             type : String,
            
         }

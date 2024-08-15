@@ -1,0 +1,30 @@
+.feedback{
+    height:35vw;
+    width:50vw;
+    /* border: 2px solid red; */
+    margin: auto;
+    box-shadow: 1px 1px 10px 1px rgb(151, 149, 149);
+    margin-top:10vw;
+    padding:20px;
+}
+.feed-input{
+    margin-left:13vw;
+    height:50px;
+    width:300px;
+    margin-bottom: 30px;
+    /* border-bottom: 3px solid; */
+}
+
+.feeddata{
+    height:50px;
+    width: 150px;
+   margin-left:19vw;
+  
+   border-radius: 10px;
+}
+
+.allfeedback{
+height:20vw;
+width:40vw;
+border: 1px solid;
+}

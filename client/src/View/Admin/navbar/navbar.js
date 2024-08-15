@@ -1,11 +1,8 @@
-// import Button from 'react-bootstrap/Button';
-import Container from 'react-bootstrap/Container';
-// import Form from 'react-bootstrap/Form';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap';
 import './Navbar.css';
 import logomain from './logos.jpg';
-function Navbar() {
+function navbar() {
 
   return (
     <>
@@ -19,14 +16,12 @@ function Navbar() {
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active space" aria-current="page" className='home' href="/">Home</a>
+                <a class="nav-link active space" aria-current="page" className='home' href="/User">Userdata</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active space" aria-current="page" className='home' href="/Feedback">Feedback</a>
               </li>
-              <li class="nav-item ">
-                <a class="nav-link space" className='home' href="/Vision">AboutUs</a>
-              </li>
+            
               <li class="nav-item">
                 <a class="nav-link space" className='home' href="/Donate">Donation</a>
               </li>
@@ -48,4 +43,4 @@ function Navbar() {
     </>
   );
 }
-export default Navbar;
+export default navbar;
