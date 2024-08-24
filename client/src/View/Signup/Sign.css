@@ -1,11 +1,13 @@
 .sign{
     /* border: 2px solid; */
-    box-shadow: 1px 1px 15px 1px;
-    height: 600px;
-    width: 600px;
-    margin: 150px 290px;
-    background: rgb(250,168,2);
-    background: linear-gradient(90deg, rgba(250,168,2,1) 0%, rgba(126,250,6,1) 100%);
+    box-shadow: 1px 1px 15px 1px rgba(62, 62, 62, 0.324);
+    height:105vh;
+    width:50vw;
+    border-radius:10px;
+    margin: 130px 290px;
+    /* height: 200px; */
+    background-color: rgba(217, 184, 248, 0.616);
+   
 }
 .user{
     /* color: white; */
@@ -17,12 +19,11 @@
     margin-left: 200px;
 }
 .input-sign{
-    margin-left: 150px;
-    margin-top: 15px;
-    height: 40px;
-    /* box-shadow: 1px 1px 10px 1px rgb(204, 203, 203); */
-    width: 330px;
-    border-radius: 10px;
+    margin-left: 130px;
+    margin-top: 10px;
+    height:50px;
+    width:30vw;
+   
 }
 .name{
     margin-left: 170px; 
@@ -30,22 +31,22 @@
  margin-top: 150px;
 }
 .type{
-    margin-left: 250px;
+    margin-left: 225px;
     margin-top: 30px;
-    height: 40px;
-    width: 90px;
+    height: 50px;
+    width: 150px;
     border-radius: 10px;
-    background: rgb(45,250,2);
-    background: linear-gradient(180deg, rgba(45,250,2,1) 0%, rgba(237,250,237,1) 10%, rgba(11,250,6,1) 100%);
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
     /* background-color:white; */
     /* color: white; */
 }
 .paragraph{
     margin-left: 150px;
-    margin-top: 30px;
-    color: white;
+    margin-top:5px;
+    /* color: white; */
 }
 .create{
     text-decoration: none;
-    color: white;
+    color:black;
 }

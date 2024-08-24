@@ -8,22 +8,22 @@ import pic from './image4.webp';
 
 function Crousal() {
   return (
-    <Carousel className='carousal'>
-      <Carousel.Item>
-       <img src={photo}/>
+    <Carousel >
+      <Carousel.Item >
+       <img src={photo} className='carousal'/>
         <Carousel.Caption>
            
         
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-      <img src={counter}/>
+      <img src={counter} className='carousal'/>
         <Carousel.Caption>
        
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-      <img src={pic}/>
+      <img src={pic} className='carousal'/>
         <Carousel.Caption>
           
         </Carousel.Caption>

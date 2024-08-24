@@ -9,7 +9,7 @@ function Navbar() {
 
   return (
     <>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top ">
+      <nav class="navbar barmain navbar-expand-lg navbar-light bg-light fixed-top ">
         <div class="container-fluid">
          <img className='logomain' src={logomain} />
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,10 +28,10 @@ function Navbar() {
                 <a class="nav-link space" className='home' href="/Vision">AboutUs</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link space" className='home' href="/Donate">Donation</a>
+                <a class="nav-link space" className='home' href="/DonateCode">Donation</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link space" className='home' href="/Donatelist">DonateList</a>
+                <a class="nav-link space" className='home' href="/Donate">DonateList</a>
 
 
               </li>

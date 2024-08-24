@@ -4,12 +4,12 @@ const FeedbackSchema =new Schema(
     {
         name: {
             type: String,
-            required: true,
+           
             
           },
           email: {
             type: String,
-            required: true,
+           
          
           },
          

@@ -1,9 +1,8 @@
 import './Footer.css';
 import logos from './logos.jpg';
 import insta from './instagram.png';
-import linked from './linked.png';
+import linked from './linkedin.png';
 import github from './github.png';
-
 
 export default function Footer(){
     return(
@@ -15,9 +14,9 @@ export default function Footer(){
     </div>
     <div>
         <p className='aboutus'>AboutUs</p>
-        <ul className='list' >Swasthya Ahara</ul>
-        <ul className='list'>Paushtik Ahara</ul>
-        <ul className='list'>Bal Shiksha Ahara</ul>
+        <ul className='list' >Swasthya Ahar</ul>
+        <ul className='list'>Paushtik Ahar</ul>
+        <ul className='list'>Bal Shiksha Ahar</ul>
     </div>
     <div>
         <p className='aboutus'>Donation</p>

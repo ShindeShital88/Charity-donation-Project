@@ -27,17 +27,20 @@ export default function Vision(){
 <div className='min-div'>
     <div className='img-class' data-aos="fade-right" data-aos-duration="3000" >
         <img className='bal' src={shiksha}/>
-        <h5 className='ahar'>Bal Shiksha Ahara</h5>
+        {/* <a href=" Shiksha"> <h5 className='ahar'>Bal Shiksha Ahar</h5></a> */}
+        <h5 className='ahar'>Bal Shiksha Ahar</h5>
         <p className='para-class'>Municipal School Meals Programme</p>
     </div>
     <div className='img-class' data-aos="fade-up" data-aos-duration="3000">
         <img className='bal' src={img5}/>
-        <h5 className='ahar'>Swasthya Ahara</h5>
+        {/* <a href="URL"> <h5 className='ahar'>Swasthya Ahar</h5></a> */}
+      <h5 className='ahar'>Swasthya Ahara</h5>
         <p className='para-class'>Government Hospital Feeding Programme</p>
     </div>
     <div className='img-class'data-aos="fade-left" data-aos-duration="3000">
         <img className='bal' src={img6}/>
-        <h5 className='ahar'>Paushtik Ahara</h5>
+        {/* <a href="URL"> <h5 className='ahar'>Paushtik Ahara</h5></a> */}
+        <h5 className='ahar'>Paushtik Ahar</h5>
         <p className='para-class'>Meals On Wheels Programme</p>
     </div>
 </div>
@@ -53,19 +56,19 @@ export default function Vision(){
      data-aos-offset="300"
      data-aos-easing="ease-in-sine"
      data-aos-duration="3000">
-        <h3>Swasthya Ahara</h3>
+        <h3>Swasthya Ahar</h3>
         <p>Providing free, unlimited, nutritious lunch to patients' families<br></br> keeps them healthy and helps save for medication.</p>
        </div>
        <div data-aos="zoom-in"
      data-aos-anchor="#example-anchor"
      data-aos-offset="500"
      data-aos-duration="3000">
-       <h3>Paushtik Ahara</h3>
+       <h3>Paushtik Ahar</h3>
        <p>Providing free, unlimited, nutritious lunch combined with <br></br> education prepares children in slum areas for a bright future.</p>
        </div>
        <div  data-aos="fade-left"
      data-aos-duration="3000">
-        <h3>Bal Shiksha Ahara</h3>
+        <h3>Bal Shiksha Ahar</h3>
         <p>Providing free, millet-based nutritious breakfast counters<br></br> classroom hunger for better learning.</p>
        </div>
         </div>  

@@ -33,7 +33,7 @@ export default function Home() {
       <div className='card-card3'>
        
         <img className='img-img' src={imagess} />
-
+    
         <div className='div-div' data-aos="flip-right"
           data-aos-easing="ease-out-cubic"
           data-aos-duration="2000">
@@ -69,19 +69,19 @@ export default function Home() {
           donation platform</h3>
       </div>
       <div className='plat'>
-        <div>
+        <div className='plat2'>
           <h2>2.7M+</h2>
           <p>Donations</p>
         </div>
-        <div>
+        <div className='plat2'>
           <h2>15M+</h2>
           <p>Live Impacted</p>
         </div>
-        <div>
+        <div className='plat2'>
           <h2>3000+</h2>
           <p>Verified Non Profits</p>
         </div>
-        <div>
+        <div className='plat2'>
           <h2>300+</h2>
           <p>Corporate Partners</p>
         </div>

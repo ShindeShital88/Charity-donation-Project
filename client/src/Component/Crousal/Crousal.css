@@ -1,9 +1,15 @@
-.img{
+/* .img {
     height: 400px;
     width: 100vw;
     border: 1px solid;
-}
-.carousal{
-margin-top: 90px;
-width: 100vw;
+} */
+
+.carousal {
+    margin-top: 80px;
+    /* height: 500vw; */
+    /* border: 1px solid; */
+    width: 100vw;
+    /* display: block; */
+    height: 60vh;
+    /* margin: auto; */
 }

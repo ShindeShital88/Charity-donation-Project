@@ -1,16 +1,18 @@
-.table{
-margin-top:150px;
-border: 2px solid;
-min-height: 60vh;
-width: 100vw;
-
+.tabletag{
+    margin-top:150px;
+    border: 2px solid;
+    min-height: 60vh;
+    width: 100vw;
+    text-align: center;
 }
-.deletbtn{
+/* .deletbtn{
     border-radius: 10px;
-    background: rgb(45,250,2);
-    background: linear-gradient(180deg, rgba(45,250,2,1) 0%, rgba(237,250,237,1) 10%, rgba(11,250,6,1) 100%);
-}
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    
+} */
 th{
+    height: 50px;
     border: 1px solid black;
 }
 td{

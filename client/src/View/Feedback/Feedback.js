@@ -58,12 +58,12 @@ export default function Feedback() {
             <div>
 
                 <form className='feedback'>
-                <h4 style={{textAlign:'center'}}>Feedback Form</h4>
+                <h2 style={{ textAlign: 'center', }}>Feedback Form</h2>
                     <input type=' text' required className='feed-input' onChange={(e) => {
                         setName(e.target.value)
                     }} placeholder='Enter Your Name' />
 
-                    <input type='text' className='feed-input' onChange={(e) => {
+                    <input type='text' required className='feed-input' onChange={(e) => {
                         setEmail(e.target.value)
                     }} placeholder='Enter Your Email' />
 
@@ -83,18 +83,18 @@ export default function Feedback() {
                     }} />
                     <button className='feeddata'onClick={feedbackdata}>Submit</button>
                 </form>
-
+               <h2 style={{textAlign:'center' , marginTop:20}}><u>Our Feedback</u></h2>
 
                 {
                     feedData.map((all) => {
                         return (
                             <>
                             <div className='allfeedback'>
-                                <h2>{all.name}</h2>
-                                <h3>{all.email}</h3>
-                                <h3>{all.rating}</h3>
-                                <h3>{all.comments}</h3>
-                                <h3>{all.date}</h3>
+                                <h5>{all.name}</h5>
+                                <p style={{fontSize:20}}>{all.email}</p>
+                                <p>{all.rating}</p>
+                                <p>{all.comments}</p>
+                                <p>{all.date}</p>
                             </div>
                             </>
                         )

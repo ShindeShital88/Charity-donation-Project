@@ -17,6 +17,7 @@ export default function Sign() {
     const [role, setRole] = useState('');
 
 
+  
     const SignupData = async () => {
 
 
@@ -30,7 +31,6 @@ export default function Sign() {
         toast.success("Signup successfully")
 
     }
-
 
     const local = async () => {
 
@@ -48,7 +48,7 @@ export default function Sign() {
         <Navbar/>
 
             <div className='sign'>
-                <h2 className='user'>Signup</h2>
+            <h2 style={{ textAlign: 'center', marginTop:40, padding:20 }}>Signup</h2>
 
                 <div >
                     <input type='text' className='input-sign' placeholder='Enter the First name' onChange={(e) => { setFirstName(e.target.value) }} /><br></br><br></br>

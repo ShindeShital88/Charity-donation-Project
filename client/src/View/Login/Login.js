@@ -38,7 +38,8 @@ out()
 <div className='back'>
       <div className='Data'>
     
-          <p className='login'>Signin</p><b />
+      <h2 style={{ textAlign: 'center', marginTop:40, padding:20 }}>Signin</h2>
+
 
            {/* <p className=''>Enter the mail to continue</p> */}
           <input type='text' placeholder='Enter the Email'required className='function' onChange={(e)=>{setEmailaddress(e.target.value)}}/><br></br>

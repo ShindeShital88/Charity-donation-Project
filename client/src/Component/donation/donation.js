@@ -5,18 +5,18 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Navbar from '../../Component/Navbar/Navbar.js';
 import Footer from '../../Component/Footer/Footer.js';
-export default function Donate() {
+export default function DonateCode() {
     const [From, setFrom] = useState([])
     const [FirstName, setFirstName] = useState('');
     const [LastName, setLastName] = useState('');
     const [PhoneNumber, setPhoneNumber] = useState('');
     const [Emailaddress, setEmailaddress] = useState('');
-    // const [Birthdate, setBirthdate] = useState('');  
+    const [Birthdate, setBirthdate] = useState('');  
     const [Address, setAddress] = useState('');
     const [Pincode, setPincode] = useState('');
     const [State, setState] = useState('');
     const [City, setCity] = useState('');
-    const [ Amount, setAmount] = useState('');
+    const [Amount, setAmount] = useState('');
 
 
 
@@ -28,12 +28,12 @@ export default function Donate() {
                 LastName: LastName,
                 PhoneNumber: PhoneNumber,
                 Emailaddress: Emailaddress,
-                // Birthdate: Birthdate,
+                Birthdate: Birthdate,
                 Address: Address,
                 Pincode: Pincode,
                 State: State,
                 City: City,
-                Amount:  Amount     
+                Amount: Amount
             })
             console.log(doner)
             toast.success("donation successfully")
@@ -63,75 +63,88 @@ export default function Donate() {
     return (
         <>
             <Navbar />
-            <h3 className='child'>Donation Form</h3>
-            <div className='main-div'>
-                <form className='from'>
+            <h2 style={{ textAlign: 'center', marginTop: 90 }}>Charity Donation Form</h2>
+            <form>
+                <div className='main-form'>
+                    <div className='block'>
 
-                    <div>
-                   <span className='span'>FirstName :</span>  <input type='text' className='main-input'  required onChange={(e) => {
-                        console.log(e.target.value)
-                        setFirstName(e.target.value)
-                    }} placeholder='First Name' />
+                        <div >
+                            FirstName:<br></br><input type='text' onChange={(e)=>{
+                                setFirstName(e.target.value)
+                            }} className='allinput' placeholder='FirstName' />
+                        </div>
+                        <div>
+                            LastName:<br></br><input type='text' onChange={(e)=>{
+                                setLastName(e.target.value)
+                            }} className='allinput' placeholder='LastName' />
+                        </div>
 
-{/* <br></br> */}
-
-                    <span className='span1'>LastName :</span> <input type='text' className='main-input' required onChange={(e) => {
-                        console.log(e.target.value)
-                        setLastName(e.target.value)
-                    }} placeholder='Last Name' /><br></br>
-                   
                     </div>
-                   <span className='span'> PhoneNo : </span><input type='number' className='main-input' required onChange={(e) => {
-                        console.log(e.target.value)
-                        setPhoneNumber(e.target.value)
-                    }} placeholder='PhoneNo' /> 
+                    <div className='block'>
 
-{/* <br></br> */}
-                 <span className='span1'> Email : </span> <input type='email' className='main-input1'  required onChange={(e) => {
-                        console.log(e.target.value)
-                        setEmailaddress(e.target.value)
-                    }} placeholder='Email' /><br></br>
+                        <div >
+                            PhoneNo:<br></br><input type='text' onChange={(e)=>{
+                                setPhoneNumber(e.target.value)
+                            }} className='allinput' placeholder='PhoneNumber' />
+                        </div>
+                        <div>
+                            Email:<br></br><input type='text' onChange={(e)=>{
+                                setEmailaddress(e.target.value)
+                            }} className='allinput' placeholder='Emailaddress' />
+                        </div>
 
-                    {/* Birthdate : <input type='date' className='valu-new' onChange={(e) => {
-                        setBirthdate(e.target.value)
-                    }} /> */}
+                    </div>
+                    <div className='block'>
 
-                   <span className='span'> Address : </span><input type='text' className='main-input' required  placeholder='Address' onChange={(e) => {
-                        setAddress(e.target.value)
-                    }} />
-{/* <br></br> */}
-               <span className='span1'> Pincode:</span> <input type='number' className='main-input2' required placeholder='pincode' onChange={(e) => {
-                        setPincode(e.target.value)
-                    }} /><br></br>
+                        <div >
+                            Birthdate:<br></br><input type='date' onChange={(e)=>{
+                                setBirthdate(e.target.value)
+                            }} className='allinput' placeholder='Birthdate' />
+                        </div>
+                        <div>
+                            Address:<br></br><input type='text' onChange={(e)=>{
+                                setAddress(e.target.value)
+                            }} className='allinput' placeholder='Address' />
+                        </div>
 
+                    </div>
+                    <div className='block'>
 
-                   <span className='span'> State :</span> <input type='text' className='main-input' required  placeholder='State' onChange={(e) => {
-                        setState(e.target.value)
-                    }} />
-                   {/* <br></br> */}
-                  <span className='span1'>City:</span> <input type='text' className='main-input4' required placeholder='City' onChange={(e) => {
-                        setCity(e.target.value)
-                    }} />
-                    
+                        <div>
+                            Pincode:<br></br><input type='text' onChange={(e)=>{
+                                setPincode(e.target.value)
+                            }} className='allinput' placeholder=' Pincode' />
+                        </div>
+                        <div>
+                            State:<br></br><input type='text' onChange={(e)=>{
+                                setState(e.target.value)
+                            }} className='allinput' placeholder='State' />
+                        </div>
 
+                    </div>
+                    <div className='block'>
 
-
-                    <p >  How Much do you want to donate?</p>
-                    <input type='text' className='effect' onChange={(e) => {
-                        console.log(e.target.value)
+                        <div >
+                            City:<br></br><input type='text' onChange={(e)=>{
+                                setCity(e.target.value)
+                            }} className='allinput' placeholder=' City' />
+                        </div>
+                        <div>
+                       Amount:<br></br><input type='text' onChange={(e)=>{
                         setAmount(e.target.value)
-                    }} placeholder='Donation Amount' />
+                       }} className='allinput' placeholder='Amount' />
+                        </div>
 
+                    </div>
                     <button className='buton' onClick={dontedata}>Donate</button>
-                </form>
+
+                </div>
+            </form>
 
 
-                <ToastContainer />
-            </div>
-<div>
-    
-</div>
-<Footer />
+            <ToastContainer />
+
+            <Footer />
         </>
     )
 }

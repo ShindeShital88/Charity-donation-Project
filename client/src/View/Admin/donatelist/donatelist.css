@@ -1,0 +1,25 @@
+.table{
+    margin-top:50px;
+    border: 2px solid;
+    min-height: 60vh;
+    width: 100vw;
+    /* font-weight: 100;
+    font-size: larger; */
+    text-align: center;
+    }
+    .deletbtn{
+        border-radius: 10px;
+       background-color: black;
+    }
+    .deletbtn:hover{
+        background-color: #8EC5FC;
+        background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+        color: black;
+    }
+    th{
+        /* height: 50px; */
+        border: 1px solid black;
+    }
+    td{
+        border: 1px solid;
+    }

@@ -19,7 +19,7 @@ export function MainCard({img, title, description})
 <div>
         <p className='img-des'>{description}</p>
         </div>
-        <a href='/Donate'><button className='bbt'>Donation</button></a>
+        <a href='/DonateCode'><button className='bbt'>Donation</button></a>
 
         </div>
         </div>

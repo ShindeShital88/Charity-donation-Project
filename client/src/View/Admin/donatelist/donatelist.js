@@ -1,13 +1,13 @@
 import axios from "axios"
 import { useEffect, useState } from "react";
-import './Donationlist.css';
-import Minibar from "../Admin/navbar/navbar.js";
-import Footer from "../../Component/Footer/Footer.js";
+import './donatelist.css';
+// import Navbar from '../../Component/Navbar/Navbar.js';
+import Minibar from "../navbar/navbar.js";
+// import Footer from "../../Component/Footer/Footer.js";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import Navbar from "../../Component/Navbar/Navbar.js";
 // import Minibar from "../Admin/navbar/navbar.js";
-export default function DonateList() {
+export default function Donate() {
     const [From, setFrom] = useState([])
 
     const variable = async () => {
@@ -16,13 +16,13 @@ export default function DonateList() {
         setFrom(no.data.data)
     }
 
-    // const deleteAPI = async (From) => {
-    //     const id = From._id;
-    //     const deletedata = await axios.delete(`http://localhost:7000/donates/${id}`)
-    // //  alert("Are you sure you want to delete your name from the donation list?");
-    //     variable(deletedata.data.msg);
-    //     console.log("deletedata.data.msg");
-    // }
+    const deleteAPI = async (From) => {
+        const id = From._id;
+        const deletedata = await axios.delete(`http://localhost:7000/donates/${id}`)
+    //  alert("Are you sure you want to delete your name from the donation list?");
+        variable(deletedata.data.msg);
+        console.log("deletedata.data.msg");
+    }
     useEffect(
         () => {
             variable();
@@ -30,9 +30,8 @@ export default function DonateList() {
 
     return (
         <>
-        <Navbar/>
-            {/* <Minibar /> */}
-            <table border={1} className="tabletag">
+            <Minibar />
+            <table border={1} className="table">
                 <thead>
                     <tr>
                         <th>FirstName</th>
@@ -61,7 +60,7 @@ export default function DonateList() {
                                     <td>{Data.State}</td>
                                     <td>{Data.City}</td>
                                     <td>₹{Data.Amount}</td>
-                                    {/* <td><button className='deletbtn' onClick={() => { deleteAPI(Data) }}>Delete</button></td> */}
+                                    <td><button className='Dbtn' onClick={() => { deleteAPI(Data) }}>Delete</button></td>
                                 </tr>
                             </tbody>
                         </>

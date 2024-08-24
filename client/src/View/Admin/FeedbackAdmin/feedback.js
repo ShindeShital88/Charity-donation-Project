@@ -4,8 +4,8 @@ import { useState  , useEffect} from 'react'
 // import { Mininav } from '../../../Component/Navbar/Mininav';
 import {ToastContainer , toast} from 'react-toastify'
 import 'react-toastify/ReactToastify.css'
-
-
+import Minibar from "../navbar/navbar.js"
+import './feedback.css';
 
 
 export function Feed(){
@@ -34,11 +34,10 @@ export function Feed(){
     )
     return(
         <>
-        {/* <Mininav/> */}
-        <table border={1} className="table">
-                <thead className="thead">
-                    <tr>
-                      
+        <Minibar/>
+        <table border={1} className="format" >
+                <thead >
+                    <tr style={{height:50}}>
                         <th>Name</th>
                         <th>Email</th>
                         <th>comments</th>
@@ -46,12 +45,12 @@ export function Feed(){
                        
                     </tr>
                 </thead>
-                {/* {allphone.reverse().map((info) =>
+                {allphone.reverse().map((info) =>
                     <>
                         <tbody>
                             <tr>
                               
-                                <td>{info.name}</td>
+                                <td >{info.name}</td>
                                 <td>{info.email}</td>
                                 <td>{info.comments}</td>
                                 <td>{info.date}</td>
@@ -59,7 +58,7 @@ export function Feed(){
                                </tr>
                         </tbody>
                     </>
-                )} */}
+                )}
                  <ToastContainer/>
             </table>
         </>
